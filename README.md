@@ -99,30 +99,32 @@ Upload the above code to your XIAO RP2040. Once uploaded, with a multimeter, mea
 
 ## Schematic Online Viewer
 
-<div className="altium-ecad-viewer" data-project-src="https://github.com/Longan-Labs/XIAO_MATRIX_RES/raw/main/EAGLE_XIAO_MATRIX.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/raw/main/XIAO_IO.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## FAQ
 
-- Q1: Do I need to solder anything when I receive the product?
-- A1: If you intend to use the board in conjunction with the XIAO main controller, you'll need to solder the provided pin headers. However, if you're using the board in a different setup, soldering might not be necessary.
+### 1. Why isn't my GPIO Expander for XIAO responding?
 
-- Q2: How do I power the 6x10 RGB-MATRIX?
-- A3: The matrix can be powered through the XIAO's 5V supply or directly via the VCC solder pad with a 5V source.
+**Answer**: Ensure that the XIAO module is correctly plugged into the expansion board. Also, check if the necessary libraries are installed and the correct board and port are selected in the Arduino IDE.
 
-- Q3: The LEDs aren't lighting up. What should I do?
-- A4: Ensure that your soldering is done correctly, the matrix is properly connected to the XIAO main controller, and the correct code has been uploaded. If issues persist, refer to the official documentation or contact Seeed Studio support.
+### 2. Can I use the GPIO Expander for XIAO with other microcontrollers?
 
-- Q4: Can I integrate this matrix into wearable tech or clothing?
-- A5: Given its compact design, the 6x10 RGB-MATRIX can be integrated into various projects, including wearable tech. However, ensure that the connections are secure and the matrix is protected from excessive wear and tear.
+**Answer**: Yes, the GPIO Expander is designed primarily for the XIAO module, but it can be used with other microcontrollers that support I2C communication. You might need to adjust the code and connections accordingly.
 
-- Q5: Can I chain multiple expansion boards together?
-- A6: Yes, you can. However, some soldering will be required. You'll need to solder the DOUT of the preceding board to the DIN of the next board, and also connect the VCC and GND solder pads together.
+### 3. How do I change the I2C address of the MCP23017 chip on the GPIO Expander for XIAO?
+
+**Answer**: The default I2C address is set to 0x21. If you want to change it to 0x20, there's a jumper labeled "J2" on the board. You'll need to solder the J2 jumper to change the address.
+
+### 4. I'm getting noise or erratic behavior on my GPIO pins. What could be the cause?
+
+**Answer**: Ensure that the connections are secure and there's no interference. Using pull-up or pull-down resistors can help stabilize the input pins. Also, ensure that the power supply is stable and can provide the necessary current for all connected devices.
+
 
 ## Resources
 
-- **[Zip]** [Eagle file](https://github.com/Longan-Labs/XIAO_MATRIX_RES/raw/main/EAGLE_XIAO_MATRIX.zip)
-- **[PDF]** [Datasheet - WS2812B](https://github.com/Longan-Labs/XIAO_MATRIX_RES/blob/main/WS2812B-1010-DATASHEET.PDF)
+- **[Zip]** [Eagle file](https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/raw/main/XIAO_IO.zip)
+- **[PDF]** [Datasheet - MCP23017](https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/blob/main/MCP23017_Data_Sheet_DS20001952-2998473.pdf)
 - **[GITHUB]** [Library for WS2812B](https://github.com/adafruit/Adafruit_NeoPixel)
 
 ## Tech Support
