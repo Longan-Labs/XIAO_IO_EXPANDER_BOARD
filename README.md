@@ -43,6 +43,48 @@ The GPIO Expander for XIAO is versatile and can be used in a multitude of applic
 
 ## Hardware Overview
 
+This section provides a detailed overview of the various components and interfaces on the XIAO IO Expander Board.
+
+![XIAO IO Expander Board Overview](https://raw.githubusercontent.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/main/images/hw.png)
+
+### Components and Interfaces
+
+#### 0. Standard XIAO Pads
+
+These are the standard pads for connecting the XIAO microcontroller.
+
+#### 1. J1 Pads
+
+The J1 pads allow users to decide whether to connect the MCP23017's RST, INTB, and INTA pins to the XIAO's D6, D1, and D0 pins through soldering. From top to bottom, they are RST, INTB, INTA.
+
+#### 2. MCP23017 Chip
+
+This is the main I/O expander chip, providing an additional 16 GPIOs.
+
+#### 3. J2 Pads
+
+This pad is for selecting the I2C address. The default address is 0x21. If you solder this pad, the address can be changed to 0x20.
+
+#### 4. MCP23017 Output Pins
+
+These are the output pins from the MCP23017 chip. Each pin's definition can be seen on the back of the board. They range from PA0 to PB7, providing a total of 16 GPIOs.
+
+#### 5. Grove Pads
+
+If you wish to connect a Grove module, you can solder the provided Grove socket. This Grove interface is connected to the I2C bus.
+
+#### 6. VCC Pin
+
+This is an output pin that can be used to power other components.
+
+#### 7. GND Pin
+
+This is also an output pin that can be used for grounding other components.
+
+#### 8. Additional Output Pads
+
+These are some additional output pads, including GND, INTB, INTA, RST. If you wish to solder these pins for use elsewhere, you can do so.
+
 
 ## Getting Started
 
