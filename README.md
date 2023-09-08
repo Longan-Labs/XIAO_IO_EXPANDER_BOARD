@@ -41,6 +41,9 @@ The GPIO Expander for XIAO is versatile and can be used in a multitude of applic
 - Industrial Control Systems: Manage more devices and sensors in your industrial setup.
 - Educational Projects: Teach students about microcontrollers and electronics without being limited by the number of GPIO pins.
 
+## Hardware Overview
+
+
 ## Getting Started
 
 Welcome to the quick start guide for the IO Expander for XIAO. This guide aims to help you set up and get started with your new IO Expander board in conjunction with the XIAO RP2040 main controller.
