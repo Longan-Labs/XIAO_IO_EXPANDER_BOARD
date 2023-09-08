@@ -10,7 +10,7 @@ last_update:
   author: Stephen Lo
 ---
 
-<p style={{textAlign: 'center'}}><img src="https://raw.githubusercontent.com/Longan-Labs/XIAO_MATRIX_RES/main/images/1-6x10-RGB-MATRIX-for-XIAO-45font.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://raw.githubusercontent.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/main/images/2-103030415-GPIO-Expander-for-XIAO-font.jpg" alt="pir" width={600} height="auto" /></p>
 
 The GPIO Expander for XIAO is a state-of-the-art expansion board designed to enhance the capabilities of the Seeed Studio XIAO series. Powered by the MCP23017 chip, this board offers an additional 16 GPIO pins, allowing users to expand their projects without constraints. Whether you're a hobbyist looking to experiment with more components or a professional seeking a reliable GPIO expansion solution, this board is tailored to meet your needs. Its compatibility with the XIAO series ensures seamless integration, making your development process smoother and more efficient.
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/-Grove-VOC-and-eCO2-Gas-Sensor-(SGP30)-p-3071.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
@@ -43,23 +43,18 @@ The GPIO Expander for XIAO is versatile and can be used in a multitude of applic
 
 ## Getting Started
 
-
 Welcome to the quick start guide for the IO Expander for XIAO. This guide aims to help you set up and get started with your new IO Expander board in conjunction with the XIAO RP2040 main controller.
 
 ### 1. Soldering the Headers:
 Upon receiving your product, some soldering will be required. We've provided two pin headers with the package. You'll need to solder these headers onto the expansion board. 
-*Refer to the image provided in the documentation for a visual guide.*
-
-// 一张焊接好的图片
 
 ### 2. Connecting the Expansion Board:
 Once the soldering is complete, you can proceed to connect the expansion board to the XIAO RP2040 main controller.
-*Again, refer to the accompanying image in the documentation for clarity.*
 
 ### 3. Connecting to Your Computer:
 For programming the XIAO RP2040, you'll need a TYPE-C USB data cable. Connect one end to the XIAO RP2040 and the other to your computer. For a detailed guide on programming the XIAO RP2040, please refer to this [documentation](https://wiki.seeedstudio.com/XIAO-RP2040/).
 
-// 一张插到电脑的图片
+![](https://raw.githubusercontent.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/main/images/6-103030415-GPIO-Expander-for-XIAO-feature.jpg)
 
 ### 4. Installing the MCP23017 Library:
 Before you can start programming the LEDs, you'll need a specific library for the RP2040. Download the MCP23017 library from this [GitHub link](https://github.com/Longan-Labs/Adafruit-MCP23017-Arduino-Library). Once downloaded, install the library in your programming environment.
@@ -94,7 +89,6 @@ void loop() {
 }
 ```
 
-
 Upload the above code to your XIAO RP2040. Once uploaded, with a multimeter, measure each IO pin. You will see the voltage jump between 3.3V and 0V, consistent with the blinking frequency in the code.
 
 ## Schematic Online Viewer
@@ -125,7 +119,6 @@ Upload the above code to your XIAO RP2040. Once uploaded, with a multimeter, mea
 
 - **[Zip]** [Eagle file](https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/raw/main/XIAO_IO.zip)
 - **[PDF]** [Datasheet - MCP23017](https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/blob/main/MCP23017_Data_Sheet_DS20001952-2998473.pdf)
-- **[GITHUB]** [Library for WS2812B](https://github.com/adafruit/Adafruit_NeoPixel)
 
 ## Tech Support
 If you have any technical issue.  submit the issue into our [forum](https://forum.seeedstudio.com/).
