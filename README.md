@@ -136,6 +136,30 @@ void loop() {
 
 Upload the above code to your XIAO RP2040. Once uploaded, with a multimeter, measure each IO pin. You will see the voltage jump between 3.3V and 0V, consistent with the blinking frequency in the code.
 
+### Pin Addressing
+
+When using single pin operations such as _pinMode(pinId, dir)_ or _digitalRead(pinId)_  or _digitalWrite(pinId, val)_ then the pins are addressed using the ID's below. For example, for set the mode of _GPB0_ then use _pinMode(8, ...)_. **NOTE** The MCP23008 and MCP23S08 only have _GPAx_ pins.
+
+| MCP23x17 Pin # | Pin Name | Pin ID |
+| :------------: | :------: | :----: |
+|       21       |   GPA0   |   0    |
+|       22       |   GPA1   |   1    |
+|       23       |   GPA2   |   2    |
+|       24       |   GPA3   |   3    |
+|       25       |   GPA4   |   4    |
+|       26       |   GPA5   |   5    |
+|       27       |   GPA6   |   6    |
+|       28       |   GPA7   |   7    |
+|       1        |   GPB0   |   8    |
+|       2        |   GPB1   |   9    |
+|       3        |   GPB2   |   10   |
+|       4        |   GPB3   |   11   |
+|       5        |   GPB4   |   12   |
+|       6        |   GPB5   |   13   |
+|       7        |   GPB6   |   14   |
+|       8        |   GPB7   |   15   |
+
+
 ## Schematic Online Viewer
 
 <div className="altium-ecad-viewer" data-project-src="https://github.com/Longan-Labs/XIAO_IO_EXPANDER_BOARD/raw/main/XIAO_IO.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
